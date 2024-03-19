@@ -1,0 +1,5 @@
+# Serverless Framework
+.serverless
+
+# Python
+__pycache__

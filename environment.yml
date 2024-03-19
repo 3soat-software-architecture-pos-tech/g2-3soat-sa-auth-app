@@ -1,0 +1,2 @@
+# Cognito
+USER_POOL_CLIENT_ID: !Ref CognitoUserPoolClient

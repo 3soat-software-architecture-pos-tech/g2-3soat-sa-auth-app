@@ -1,0 +1,15 @@
+service: tech-challenge-cognito-service
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: ${opt:stage, "dev"}
+  region: ${opt:region, "us-east-1"}
+  environment: ${file(environment.yml)}
+
+resources:
+  - ${file(resources.yml)}
+  
+functions:
+  - ${file(app/functions.yml)}
+  
