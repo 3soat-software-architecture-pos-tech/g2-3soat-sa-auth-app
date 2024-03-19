@@ -1,2 +1,5 @@
 # Cognito
 USER_POOL_CLIENT_ID: !Ref CognitoUserPoolClient
+
+# Logic
+DEFAULT_PASSWORD: L40|=fq;O@#U

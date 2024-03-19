@@ -11,5 +11,5 @@ resources:
   - ${file(resources.yml)}
   
 functions:
-  - ${file(app/functions.yml)}
+  - ${file(src/functions.yml)}
   

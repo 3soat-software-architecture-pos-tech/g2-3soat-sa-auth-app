@@ -1,5 +1,5 @@
 registerUser:
-    handler: app/handler.register_user
+    handler: src/register_user/handler.register_user
     events:
       - http:
           path: register-user
@@ -8,7 +8,7 @@ registerUser:
 
 
 confirmUser:
-    handler: app/handler.confirm_user
+    handler: src/confirm_user/handler.confirm_user
     events:
       - http:
           path: confirm-user
@@ -17,7 +17,7 @@ confirmUser:
 
           
 authenticateUser:
-    handler: app/handler.authenticate_user
+    handler: src/authenticate_user/handler.authenticate_user
     events:
       - http:
           path: authenticate-user
