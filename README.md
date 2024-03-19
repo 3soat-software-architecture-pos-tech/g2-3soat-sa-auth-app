@@ -9,7 +9,6 @@ Antes de começar, é necessário configurar o ambiente:
 
 1. Certifique-se de ter o [Serverless Framework](https://www.serverless.com/) instalado localmente.
 2. Configure suas credenciais da AWS no seu ambiente local.
-3. Certifique-se de ter um User Pool configurado no Amazon Cognito.
 
 
 ## Funções Lambda
