@@ -1,0 +1,18 @@
+Resources:
+    CognitoUserPool:
+      Type: AWS::Cognito::UserPool
+      Properties:
+        UserPoolName: fiapUserPool
+        UsernameAttributes:
+          - email
+        AutoVerifiedAttributes:
+          - email
+
+    CognitoUserPoolClient:
+      Type: AWS::Cognito::UserPoolClient
+      Properties:
+        ClientName: fiapUserPoolClient
+        UserPoolId:
+          Ref: CognitoUserPool
+        ExplicitAuthFlows:
+          - USER_PASSWORD_AUTH

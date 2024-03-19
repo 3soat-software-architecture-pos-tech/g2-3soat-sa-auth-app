@@ -1,0 +1,25 @@
+registerUser:
+    handler: app/handler.register_user
+    events:
+      - http:
+          path: register-user
+          method: post
+          cors: true
+
+
+confirmUser:
+    handler: app/handler.confirm_user
+    events:
+      - http:
+          path: confirm-user
+          method: post
+          cors: true
+
+          
+authenticateUser:
+    handler: app/handler.authenticate_user
+    events:
+      - http:
+          path: authenticate-user
+          method: post
+          cors: true
